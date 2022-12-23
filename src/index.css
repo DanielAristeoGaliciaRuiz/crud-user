@@ -1,0 +1,263 @@
+html{
+    box-sizing:border-box;
+    background: linear-gradient( #B3E5FC 0%, #60cdff 100%);
+    background-repeat: no-repeat;
+    background-size:contain ;
+    min-height: 100vh;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.App{
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+input{
+    outline: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+h1{
+    color:#ffffff;
+    font-size: xx-large;
+}
+
+
+
+/*Header styles*/
+.header-container{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-btn{
+    padding: 12px 12px;
+    color:#0396FF;
+    background-color: #FDFDFD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 100ms filter ease-in-out;
+}
+.header-btn>span{
+    font-size: large;
+}
+
+.header-btn:hover{
+    filter: brightness(1.2);
+}
+/*Users Container*/
+
+.users-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+
+/*Card users styles*/
+
+.user-card-container{
+    background-color: #FDFDFD;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    max-width: 200px;
+    min-width: 300px;
+    border-radius: 10px;
+    transition: 100ms box-shadow step-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-icon-container{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-icon{
+    font-size: 70px;
+    color:#24bfba;
+}
+.user-card-container:hover{
+    box-shadow: 1px 1px 20px rgb(133, 102, 247);
+}
+.user-tittle{
+    text-align: center;
+    /* border: 1px solid black; */
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.user-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.user-item>span{
+    color:#5F7174;
+    text-transform: uppercase;
+}
+
+.user-item >span>i{
+    color: black;
+    margin-right: 5px;
+}
+
+.user-item{
+    padding: 5px;
+    gap: 3px;
+    /* border: 1px solid black; */
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-btn-container{
+    display: flex;
+    gap: 8px;
+    justify-content: space-evenly;
+}
+
+.user-btn{
+    border: none;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 18px;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    transition: 100ms transform ease-in-out;
+    background-color: #24bfba;
+    color: white;
+}
+
+.user-btn:hover{
+    transform: scale(1.1);
+}
+
+.user-btn:first-child{
+    background-color: #9fd6d5;
+    color: white;
+}
+
+/*MODAL*/
+.container-form{
+    position: fixed;
+    background: linear-gradient( #B3E5FC 0%, #60cdff 100%);
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    top: 0;
+    min-height: 100vh;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disable-form{
+    display: none;
+}
+
+.form{
+    background: linear-gradient(#fdfdfd69, #fdfdfd);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+   
+}
+
+.form-x{
+position: absolute;
+top: 0;
+color: #60cdff;
+font-size: 40px;
+top: 10px;
+right: 10px;
+cursor: pointer;
+transition: 100ms transform ease-in-out;
+}
+
+.form-x:hover{
+    transform: scale(1.2);
+}
+
+.form-tittle{
+    font-size: 24px;
+}
+
+.form-label{
+    font-size: 14px;
+    color: black;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.form-input{
+    font-family: inherit;
+    padding: 8px 10px;
+    background-color:rgba(255, 255, 255, 0.932) ;
+    /* border: 1px solid #C3C1C1; */
+    border: none;
+    border-radius: 4px;
+}
+
+.form-btn{
+    width: 100%;
+    padding: 8px 12px;
+    color:  #24bfba;
+    background-color: white;
+    border: 1px solid #24bfba;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 100ms filter ease-in-out;
+}
+
+.form-btn:hover{
+    filter: brightness(1.2);
+}
+
+@media (max-width: 700px){
+  
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+  }
